@@ -4,17 +4,12 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 8000;
 
+// Adds js, css, and data folders as static items
 app.use(express.static(__dirname + '/css'));
 app.use(express.static(__dirname + '/data'));
 app.use(express.static(__dirname + '/js'));
-/*
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-});
-*/
-// Root Route
+
+//Launches index.html
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
