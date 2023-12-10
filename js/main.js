@@ -799,7 +799,7 @@ require([
         renderer: USMINRender
       });
 
-
+      //Combines all csv layers into a group layer and adds all to map
       const USMIN_Mineral_Deposit = new GroupLayer({
         title: "USMIN Mineral Deposits",
         visible: false,
