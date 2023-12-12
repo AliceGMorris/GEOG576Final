@@ -9,14 +9,8 @@ require([
     "esri/layers/FeatureLayer",
     "esri/widgets/Legend",
     "esri/widgets/Editor",
-    "esri/renderers/UniqueValueRenderer",
     "esri/widgets/LayerList",
-    "esri/rest/support/Query",
     "esri/layers/GraphicsLayer",
-    "esri/Graphic",
-    "esri/renderers/Renderer",
-    "esri/renderers/SimpleRenderer",
-    "esri/symbols/SimpleMarkerSymbol",
     "esri/layers/CSVLayer",
     "esri/layers/GroupLayer"
     ], function(
@@ -30,14 +24,8 @@ require([
     FeatureLayer,
     Legend,
     Editor,
-    UniqueValueRenderer,
     LayerList,
-    Query,
     GraphicsLayer,
-    Graphic,
-    Renderer,
-    SimpleRenderer,
-    SimpleMarkerSymbol,
     CSVLayer,
     GroupLayer
     ) {
